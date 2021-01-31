@@ -1,0 +1,19 @@
+<!-- string interpolation -->
+<p>{{componentTitle}}</p>
+<p>{{variableNumber}}</p>
+
+
+<!-- Event binding -> (click) si property binding -> [disabled] -->
+<button class = "pressMeButton"
+ (click) = "functionThatIsCalledOnClick()"
+ [disabled] = "buttonDisabled">Press me</button>
+
+
+ <button class = "pressMeButton"
+ (click) = "changeButtonDisableStatus()">Disable/Enable</button>
+
+
+<!-- Directiva ngIf -->
+<div *ngIf = "buttonDisabled === true">Butonul este disabled!</div>
+<div *ngIf = "buttonDisabled === false">Butonul este enabled!</div>
+
